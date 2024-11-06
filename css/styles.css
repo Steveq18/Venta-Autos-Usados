@@ -23,7 +23,6 @@ button:hover {
     background-color: #004494;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -40,14 +39,21 @@ header {
 }
 
 
-.titulo {
+header .titulo {
     flex: 2;
     text-align: center;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;  
     font-weight: bold;
+    margin: 0;
 }
 
+header h1 {
+    color: white;            
+    font-size: 2.5rem;       
+    font-weight: bold;       
+    margin: 0;
+}
 
 .carro {
     position: absolute;
@@ -58,14 +64,13 @@ header {
     animation: moverCarro 5s linear infinite;
 }
 
-
 @keyframes moverCarro {
     0% {
-        left: 30%; 
-        transform: translateX(-50%); 
+        left: 30%;
+        transform: translateX(-50%);
     }
     100% {
-        left: calc(70% - 200px); 
+        left: calc(70% - 200px);
     }
 }
 
@@ -74,7 +79,7 @@ header {
 }
 
 .logo img {
-    width: 150px; 
+    width: 150px;
     height: auto;
 }
 
@@ -116,26 +121,23 @@ nav ul li a:hover {
     text-align: center;
 }
 
-
 .auto:hover {
     transform: scale(1.05);
 }
-
 
 .auto img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 0.5rem;
-    transition: transform 0.3s ease, filter 0.3s ease; 
-    filter: grayscale(80%) brightness(0.9) contrast(1.1); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(80%) brightness(0.9) contrast(1.1);
 }
 
-
 .auto img:hover {
-    filter: grayscale(0%) brightness(1.1) contrast(1.2) saturate(1.3); 
-    transform: scale(1.05); 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    filter: grayscale(0%) brightness(1.1) contrast(1.2) saturate(1.3);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .auto h3 {
@@ -161,13 +163,14 @@ blockquote {
 .contacto {
     padding: 40px;
     background-color: transparent;
-    color: #333;
 }
 
 .contacto h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #18182b;
+    color: #080808;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .contacto p {
@@ -220,7 +223,7 @@ blockquote {
     background-color: #333;
 }
 
-/* Sobre Nosotros */
+
 .sobre-nosotros {
     padding: 40px;
     background-color: #f4f4f4;
@@ -242,8 +245,6 @@ blockquote {
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
-
-/* Footer */
 footer {
     display: flex;
     justify-content: space-around;
